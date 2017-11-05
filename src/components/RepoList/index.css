@@ -1,0 +1,152 @@
+.repolist {
+  width: 100%;
+}
+
+.repolist .loader {
+  height: 100px;
+  display: flex;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sortWrap {
+  margin: 30px 0 15px 100px;
+}
+
+.repos-sorted {
+  display: flex;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.sorter-item {
+  padding: 0 15px;
+  cursor: pointer;
+  color: #0670eb;
+}
+
+.sorter-item.active {
+  background-color: #d4d7f1;
+  color: #333;
+  border-radius: 20px;
+  line-height: 30px;
+}
+
+.sorter-title {
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.repo-card {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.repo-card .post-content {
+  position: relative;
+  display: block;
+  background: #ffffff;
+  width: 250px;
+  height: 300px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.3s linear 0s;
+  padding: 30px;
+}
+
+.repo-card .name {
+  margin: 15px 0 0;
+  padding: 0;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.repo-card .lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #e74c3c;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.repo-card .fork {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #3979e7;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.repo-card .bottom {
+  position: absolute;
+  display: flex;
+  bottom: 10px;
+}
+
+.repo-card .update,
+.repo-card .stars {
+  color: #999999;
+  font-size: 13px;
+}
+
+.repo-card .update,
+.repo-card .stars {
+  display: flex;
+  align-items: baseline;
+}
+
+.button {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.button button {
+  background: #e74c3c;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+}
+
+.update-ico {
+  display: block;
+  text-indent: -9999px;
+  width: 18px;
+  height: 10px;
+  background: url(time.svg);
+  background-size: 18px 10px;
+}
+
+.stars-ico {
+  display: block;
+  text-indent: -9999px;
+  width: 18px;
+  height: 10px;
+  background: url(star.svg);
+  background-size: 18px 10px;
+}
+
+.repo-card .update {
+  margin-right: 20px;
+}
+
+.repo-card .description {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.8em;
+}
